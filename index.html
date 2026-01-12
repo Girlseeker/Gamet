@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseWave - Music Streaming with Karaoke</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <span class="logo">♫</span>
+          <div>
+            <h1>PulseWave</h1>
+            <p>Stream. Sing. Shine.</p>
+          </div>
+        </div>
+        <nav class="header-actions">
+          <button class="ghost">Upgrade</button>
+          <button class="primary">Start free trial</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <h2>Find your next anthem.</h2>
+            <p>
+              Explore trending mixes, switch to karaoke mode, and keep the beat while
+              your vocals take center stage.
+            </p>
+            <div class="search">
+              <input type="search" placeholder="Search songs, artists, or playlists" />
+              <button class="primary">Search</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Now Playing</h3>
+            <div class="track">
+              <div class="track-art"></div>
+              <div class="track-meta">
+                <p class="track-title">Midnight Echoes</p>
+                <p class="track-artist">Lyra Nova</p>
+                <div class="track-tags">
+                  <span>Chillwave</span>
+                  <span>4:02</span>
+                  <span>HD Audio</span>
+                </div>
+              </div>
+            </div>
+            <div class="player-controls">
+              <button class="ghost">⏮</button>
+              <button class="primary">▶</button>
+              <button class="ghost">⏭</button>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Curated for you</h3>
+              <button class="ghost">See all</button>
+            </div>
+            <div class="playlist-grid">
+              <article class="playlist">
+                <h4>Neon Drive</h4>
+                <p>Upbeat synths for night rides.</p>
+              </article>
+              <article class="playlist">
+                <h4>Acoustic Aura</h4>
+                <p>Warm guitar sessions.</p>
+              </article>
+              <article class="playlist">
+                <h4>Vocal Warmups</h4>
+                <p>Perfect to practice harmonies.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="panel karaoke-panel">
+            <div class="panel-header">
+              <h3>Karaoke Studio</h3>
+              <label class="toggle">
+                <input id="karaoke-toggle" type="checkbox" checked />
+                <span class="toggle-ui"></span>
+                Karaoke mode
+              </label>
+            </div>
+            <div class="karaoke-body">
+              <div class="karaoke-mix">
+                <h4>Mix controls</h4>
+                <div class="slider-row">
+                  <span>Instrumental</span>
+                  <input type="range" value="70" />
+                </div>
+                <div class="slider-row">
+                  <span>Lead vocals</span>
+                  <input type="range" value="25" />
+                </div>
+                <div class="slider-row">
+                  <span>Reverb</span>
+                  <input type="range" value="40" />
+                </div>
+                <button class="primary">Start recording</button>
+              </div>
+              <div class="karaoke-lyrics">
+                <div class="lyrics-header">
+                  <h4>Live lyrics</h4>
+                  <span class="badge">Synced</span>
+                </div>
+                <p class="lyrics-line active">"We are the stars, we light the night..."</p>
+                <p class="lyrics-line">"Singing louder as the city wakes."</p>
+                <p class="lyrics-line">"Hold the note, let it fly."</p>
+                <div class="lyrics-footer">
+                  <button class="ghost">Save take</button>
+                  <button class="ghost">Share</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <h3>Friends are listening</h3>
+            <button class="ghost">View party</button>
+          </div>
+          <div class="friends">
+            <div>
+              <p class="friend-name">Jade Kim</p>
+              <p class="friend-track">"Skyline" · Live karaoke room</p>
+            </div>
+            <div>
+              <p class="friend-name">Arun Patel</p>
+              <p class="friend-track">"Daydream" · Trending mix</p>
+            </div>
+            <div>
+              <p class="friend-name">Sol Martinez</p>
+              <p class="friend-track">"Bloom" · Vocal warmups</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
