@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse - Social Media App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">◎</span>
+          <span class="brand-name">Pulse</span>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Search people, posts, or tags" />
+        </div>
+        <div class="actions">
+          <button class="ghost">Explore</button>
+          <button class="primary">New Post</button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <section class="card profile">
+            <img src="https://picsum.photos/seed/pulse/96" alt="Profile" />
+            <h3>Jordan Lee</h3>
+            <p>@jordanlee</p>
+            <div class="stats">
+              <div>
+                <strong>1.2k</strong>
+                <span>Followers</span>
+              </div>
+              <div>
+                <strong>312</strong>
+                <span>Following</span>
+              </div>
+            </div>
+            <button class="primary full">Edit Profile</button>
+          </section>
+
+          <nav class="card nav">
+            <a class="active" href="#">Home</a>
+            <a href="#">Messages</a>
+            <a href="#">Bookmarks</a>
+            <a href="#">Lists</a>
+            <a href="#">Settings</a>
+          </nav>
+        </aside>
+
+        <main class="feed">
+          <section class="card composer">
+            <h2>Share an update</h2>
+            <form id="post-form">
+              <textarea
+                id="post-text"
+                placeholder="What do you want to share with your community?"
+                required
+              ></textarea>
+              <div class="composer-actions">
+                <div class="pill">#design</div>
+                <div class="pill">#music</div>
+                <div class="pill">#buildinpublic</div>
+              </div>
+              <div class="composer-footer">
+                <span class="hint">Be kind and stay on topic.</span>
+                <button type="submit" class="primary">Post</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="card stories">
+            <h3>Stories</h3>
+            <div class="story-grid">
+              <div class="story">
+                <img src="https://picsum.photos/seed/story1/80" alt="Story" />
+                <span>Amari</span>
+              </div>
+              <div class="story">
+                <img src="https://picsum.photos/seed/story2/80" alt="Story" />
+                <span>Leila</span>
+              </div>
+              <div class="story">
+                <img src="https://picsum.photos/seed/story3/80" alt="Story" />
+                <span>Kai</span>
+              </div>
+              <div class="story">
+                <img src="https://picsum.photos/seed/story4/80" alt="Story" />
+                <span>Riya</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="feed" class="feed-list"></section>
+        </main>
+
+        <aside class="rightbar">
+          <section class="card quick-actions">
+            <h3>Quick Actions</h3>
+            <button class="ghost full">Start a live room</button>
+            <button class="ghost full">Create a group</button>
+            <button class="ghost full">Invite friends</button>
+          </section>
+
+          <section class="card trends">
+            <h3>Trending Now</h3>
+            <ul>
+              <li>
+                <span>#productlaunch</span>
+                <strong>18.4k posts</strong>
+              </li>
+              <li>
+                <span>#sunsetsessions</span>
+                <strong>9.1k posts</strong>
+              </li>
+              <li>
+                <span>#uxchallenge</span>
+                <strong>6.5k posts</strong>
+              </li>
+            </ul>
+          </section>
+
+          <section class="card suggestions">
+            <h3>Suggested People</h3>
+            <div class="suggestion">
+              <div>
+                <strong>Alex Moreno</strong>
+                <p>@alexm</p>
+              </div>
+              <button class="primary">Follow</button>
+            </div>
+            <div class="suggestion">
+              <div>
+                <strong>Sasha Kim</strong>
+                <p>@sashak</p>
+              </div>
+              <button class="primary">Follow</button>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
